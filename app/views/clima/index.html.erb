@@ -1,0 +1,5 @@
+<%= form_tag(clima_index_path, method: :get) do %>
+  <%= select_tag :city_name, options_for_select(['Santiago', 'Sao Pablo', 'Buenos Aires', 'Lima']), :onchange => "this.form.submit();" %>
+<% end %>
+
+<p><%= @clima %></p>

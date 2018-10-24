@@ -1,0 +1,4 @@
+<h1>Usuarios ordenados</h1>
+<p><%= @users %></p>
+<p><%= button_to "ordernar por nombre", usuarios_path, method: :post, params: { order_age: false } %></p>
+<p><%= button_to "obtner menor edad", usuarios_path, method: :post, params: { order_age: true } %></p>s
